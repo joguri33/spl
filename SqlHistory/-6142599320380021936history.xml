@@ -1,0 +1,15 @@
+<?xml version='1.0'  encoding='UTF-8' ?>
+<history>
+	<historyItem>
+		<sql><![CDATA[select last_name, hire_date,
+    to_char(hire_date, 'day') day,
+    to_char(hire_date, 'd')d
+from employees
+order by 4 asc, hire_date;]]></sql>
+		<connection><![CDATA[hr]]></connection>
+		<timestamp><![CDATA[1657788667151]]></timestamp>
+		<type><![CDATA[SQL]]></type>
+		<executed><![CDATA[1]]></executed>
+		<execTime><![CDATA[0.003]]></execTime>
+	</historyItem>
+</history>

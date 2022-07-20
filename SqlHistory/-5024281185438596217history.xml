@@ -1,0 +1,12 @@
+<?xml version='1.0'  encoding='UTF-8' ?>
+<history>
+	<historyItem>
+		<sql><![CDATA[select last_name, (sysdate - hire_Date) / 7300
+from employees]]></sql>
+		<connection><![CDATA[hr]]></connection>
+		<timestamp><![CDATA[1657768498335]]></timestamp>
+		<type><![CDATA[SQL]]></type>
+		<executed><![CDATA[2]]></executed>
+		<execTime><![CDATA[0.004]]></execTime>
+	</historyItem>
+</history>

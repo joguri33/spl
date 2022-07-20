@@ -1,0 +1,17 @@
+<?xml version='1.0'  encoding='UTF-8' ?>
+<history>
+	<historyItem>
+		<sql><![CDATA[select last_name, salary,
+    case when salary < 5000 then 'low'
+        when salary < 10000 then 'medium'
+        when salary < 20000 then 'high'
+        else 'good'
+    end grade
+from employees;]]></sql>
+		<connection><![CDATA[hr]]></connection>
+		<timestamp><![CDATA[1657851909617]]></timestamp>
+		<type><![CDATA[SQL]]></type>
+		<executed><![CDATA[1]]></executed>
+		<execTime><![CDATA[0.003]]></execTime>
+	</historyItem>
+</history>

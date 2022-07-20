@@ -1,0 +1,22 @@
+<?xml version='1.0'  encoding='UTF-8' ?>
+<history>
+	<historyItem>
+		<sql><![CDATA[select last_name, hire_date,to_char(hire_date, 'day'), 
+    case to_char(hire_date, 'fmday')
+            when '1' then 'Monday'
+            when '2' then 'Tuesday'
+            when '3' then 'Wennesday'
+            when '4' then 'Thursday'
+            when '5' then 'Friday'
+            when '6' then 'Saturday'
+    else 'Sunday'
+    end d  
+from employees
+order by to_char(hire_date, 'd');]]></sql>
+		<connection><![CDATA[hr]]></connection>
+		<timestamp><![CDATA[1657855706610]]></timestamp>
+		<type><![CDATA[SQL]]></type>
+		<executed><![CDATA[1]]></executed>
+		<execTime><![CDATA[0.003]]></execTime>
+	</historyItem>
+</history>

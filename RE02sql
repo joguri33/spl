@@ -1,0 +1,147 @@
+select employee_id, last_name, department_id
+from employees
+where department_id = 90;
+
+--과제 176번 사원의 사번, 이름, 부서번호를 조회하라.
+select employee_id, last_name, department_id
+from employees
+where employee_id = 176;
+
+select employee_id, last_name, department_id
+from employees
+where last_name = 'Whalen';
+
+select employee_id, last_name, hire_date
+from employees
+where hire_date = '2008/02/06';
+
+select last_name, salary
+from employees
+where salary <= 3000;
+
+--과제] $12,000 이상 버는 사원들의 이름, 월급을 조회하라.
+select last_name, salary
+from employees
+where salary >= 12000;
+
+select last_name, job_id
+from employees
+where job_id != 'IT_PROG';
+---------------------------
+--범위 안에 드는 것들을 찾는 방법
+select last_name, salary
+from employees
+where salary between 2500 and 3000;
+
+select last_name
+from employees
+where last_name between 'King' and 'Smith';
+
+--과제] 이름이 'King'사원의 first name, last name, 직업, 월급을 조회하라.
+select first_name, last_name, job_id, salary
+from employees
+where last_name = 'Smith';
+
+select last_name, hire_date
+from employees
+where hire_date between '02/01/01' and '02/12/31';
+-------------------------
+--in다음에 일치하는 숫자들 입력방법
+select employee_id, last_name, manager_id
+from employees
+where manager_id in (100, 101, 201);
+
+select employee_id, last_name, manager_id
+from employees
+where manager_id = 100 or
+    manager_id = 101 or
+    maneger_id = 201;
+    
+select employee_id, last_name
+from employees
+where last_name in ('Hartstein', 'Vargas');
+
+select last_name, hire_date
+from employees
+where hire_date in ('2003/06/17', '2005/09/21');
+
+-------------------------
+
+select last_name
+from employees
+where last_name like 'S%';
+
+select last_name
+from employees
+where last_name like '%r';
+
+--과제] 이름에 s가 포함된 사원들의 이름을 조회하라.
+select last_name
+from employees
+where last_name like '%s%';
+
+--과제] 2005년에 입사한 사원들의 이름, 입사일을 조회하라.
+select last_name, hire_date
+from employees
+where hire_date like '2005%';
+
+--과제] 이름의 두번째 글자가 o인 사원의 이름을 조회하라.
+
+select last_name
+from employees
+where last_name like '_o%';
+
+select job_in
+from employees;
+
+select last_name, job_id
+from employees
+where job_id like 'I_\_%' escape '\';
+
+select last_name, job_id
+from employees
+where job_id like 'I_[_%' escape '[';
+
+select employee_id, last_name, manager_id
+from employees;
+
+select last_name, manager_id
+from employees
+where manager_id = null;
+
+select last_name, manager_id
+from employees
+where manager_id in null;
+---------------------
+
+select last_name, job_id, salary
+from employees
+where salary >= 5000 and job_id like '%IT%';
+
+select last_name, salary, department_id
+from employees
+where (salary between 5000 and 12000) and
+    department_id in(20, 50);
+    
+--과제] 이름에 a와 e가 포함된 사원들의 이름을 조회하라.
+select last_name
+from employees
+where last_name like'%a%' and
+    last_name like '%e%';
+-----------------------
+
+select last_name, job_id
+from employees
+where job_id not in ('IT_PROG', 'SA_REP');
+
+select last_name, salary
+from employees
+where salary not between 10000 and 15000;
+
+select last_name, job_id
+from employees
+where job_id not like '%IT%';
+
+select last_name, job_id
+from employees
+where commission_pct is not null;

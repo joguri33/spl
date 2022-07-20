@@ -1,0 +1,13 @@
+<?xml version='1.0'  encoding='UTF-8' ?>
+<history>
+	<historyItem>
+		<sql><![CDATA[select last_name, rpad('  ', salary / 1000 + 1, '*')
+from employees
+order by salary desc;]]></sql>
+		<connection><![CDATA[hr]]></connection>
+		<timestamp><![CDATA[1657782408938]]></timestamp>
+		<type><![CDATA[SQL]]></type>
+		<executed><![CDATA[2]]></executed>
+		<execTime><![CDATA[0.002]]></execTime>
+	</historyItem>
+</history>

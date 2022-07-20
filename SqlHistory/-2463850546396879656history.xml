@@ -1,0 +1,13 @@
+<?xml version='1.0'  encoding='UTF-8' ?>
+<history>
+	<historyItem>
+		<sql><![CDATA[select last_name, hire_date
+from employees
+where hire_date = to_date('Sep 21, 2005', 'Mon dd, yyyy');]]></sql>
+		<connection><![CDATA[hr]]></connection>
+		<timestamp><![CDATA[1657848476128]]></timestamp>
+		<type><![CDATA[SQL]]></type>
+		<executed><![CDATA[5]]></executed>
+		<execTime><![CDATA[0.001]]></execTime>
+	</historyItem>
+</history>

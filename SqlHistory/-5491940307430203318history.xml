@@ -1,0 +1,13 @@
+<?xml version='1.0'  encoding='UTF-8' ?>
+<history>
+	<historyItem>
+		<sql><![CDATA[select '|' || to_char(12.12, 'fm9999.999') || '|',
+    '|' || to_char(12.12, 'fm0000.000') || '|'
+from dual;]]></sql>
+		<connection><![CDATA[hr]]></connection>
+		<timestamp><![CDATA[1657784892734]]></timestamp>
+		<type><![CDATA[SQL]]></type>
+		<executed><![CDATA[1]]></executed>
+		<execTime><![CDATA[0.004]]></execTime>
+	</historyItem>
+</history>

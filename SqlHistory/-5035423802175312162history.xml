@@ -1,0 +1,14 @@
+<?xml version='1.0'  encoding='UTF-8' ?>
+<history>
+	<historyItem>
+		<sql><![CDATA[select last_name
+from employees
+where last_name like '%a%' and
+    last_name like '%e%';]]></sql>
+		<connection><![CDATA[hr]]></connection>
+		<timestamp><![CDATA[1657770539212]]></timestamp>
+		<type><![CDATA[SQL]]></type>
+		<executed><![CDATA[1]]></executed>
+		<execTime><![CDATA[0.002]]></execTime>
+	</historyItem>
+</history>

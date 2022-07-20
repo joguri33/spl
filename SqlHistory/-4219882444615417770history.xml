@@ -1,0 +1,14 @@
+<?xml version='1.0'  encoding='UTF-8' ?>
+<history>
+	<historyItem>
+		<sql><![CDATA[select to_char(salary, '$99,999.99'),
+    to_char(salary, '$00,000.00')
+from employees
+where last_name = 'Ernst';]]></sql>
+		<connection><![CDATA[hr]]></connection>
+		<timestamp><![CDATA[1657848423494]]></timestamp>
+		<type><![CDATA[SQL]]></type>
+		<executed><![CDATA[3]]></executed>
+		<execTime><![CDATA[0.002]]></execTime>
+	</historyItem>
+</history>

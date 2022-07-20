@@ -1,0 +1,15 @@
+<?xml version='1.0'  encoding='UTF-8' ?>
+<history>
+	<historyItem>
+		<sql><![CDATA[select last_name, job_id, salary,
+    case job_id when 'IT_PROG' then 1.10 * salary
+                when 'AD_PRES' then 1.05 * salary
+    else salary end revised_salary
+    from employees;]]></sql>
+		<connection><![CDATA[hr]]></connection>
+		<timestamp><![CDATA[1657851470528]]></timestamp>
+		<type><![CDATA[SQL]]></type>
+		<executed><![CDATA[1]]></executed>
+		<execTime><![CDATA[0.006]]></execTime>
+	</historyItem>
+</history>

@@ -1,0 +1,21 @@
+<?xml version='1.0'  encoding='UTF-8' ?>
+<history>
+	<historyItem>
+		<sql><![CDATA[select last_name, hire_date,
+    case to_char(hire_date) when '1' then '1'
+                            when '2' then '2'
+                            when '3' then '3'
+                            when '4' then '4'
+                            when '5' then '5'
+                            when '6' then '6'
+                            else '7'
+    end d    
+from employees
+order by to_char(hire_date - 1, 'd');]]></sql>
+		<connection><![CDATA[hr]]></connection>
+		<timestamp><![CDATA[1657852469540]]></timestamp>
+		<type><![CDATA[SQL]]></type>
+		<executed><![CDATA[1]]></executed>
+		<execTime><![CDATA[0.003]]></execTime>
+	</historyItem>
+</history>

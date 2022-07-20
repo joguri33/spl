@@ -1,0 +1,13 @@
+<?xml version='1.0'  encoding='UTF-8' ?>
+<history>
+	<historyItem>
+		<sql><![CDATA[select hire_date
+from employees
+where hire_date = '2003/06/17';]]></sql>
+		<connection><![CDATA[hr]]></connection>
+		<timestamp><![CDATA[1657848095434]]></timestamp>
+		<type><![CDATA[SQL]]></type>
+		<executed><![CDATA[1]]></executed>
+		<execTime><![CDATA[0.004]]></execTime>
+	</historyItem>
+</history>

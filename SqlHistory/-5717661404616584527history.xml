@@ -1,0 +1,22 @@
+<?xml version='1.0'  encoding='UTF-8' ?>
+<history>
+	<historyItem>
+		<sql><![CDATA[select last_name, salary,
+    decode(trunc(salary / 2000),
+        0, 0.00,
+        1, 0.09,
+        2, 0.20,
+        3, 0.30,
+        4, 0.40,
+        5, 0.42,
+        6, 0.44,
+            0.45) tax_rate
+from employees
+where department_id = 80;]]></sql>
+		<connection><![CDATA[hr]]></connection>
+		<timestamp><![CDATA[1657850930290]]></timestamp>
+		<type><![CDATA[SQL]]></type>
+		<executed><![CDATA[2]]></executed>
+		<execTime><![CDATA[0.002]]></execTime>
+	</historyItem>
+</history>

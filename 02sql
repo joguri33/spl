@@ -1,3 +1,9 @@
+select *
+from departments;
+
+select employee_id, last_name, hire_date
+from employees;
+
 select employee_id, last_name, department_id
 from employees
 where department_id = 90;

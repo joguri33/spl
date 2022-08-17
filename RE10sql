@@ -1,0 +1,36 @@
+--DDL(Data Definition Language)
+drop table hire_dates;
+
+create table hire_dates(
+id number(8),
+hire_date date default sysdate);
+
+select tname
+from tab;
+
+--과제] drop table 후, 위 문장을 실행한 결과에서, 쓰레기는 제하고, 조회하라.
+select tname
+from tab
+where tname not like 'BIN%';
+
+insert into hire_dates values(1, to_date('2025/12/21'));
+------------------------------------------
+insert into hire_dates(id) values(3);
+
+commit;
+
+select *
+from hire_dates;
+--------------------------------
+
+-- DCL(Data Control Language)
+-- system user
+create user you identified by you;
+grant connect, resource to you;
+
+-- you user
+select tname
+from tab;
+
+create table depts(
+department_id number(3) constraint dept_deptid_pk primary key,
